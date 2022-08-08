@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View custom links</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th style="padding-right: 250px">CODE</th>
+        <th style="padding-right: 250px">LINK</th>
+      </tr>
+      <% for (let i of allLinks) {%>
+      <tr>
+        <td><a href="<%=i.code%>/edit"><%=i.code%></a></td>
+        <td><%=i.link %></td>
+      </tr>
+      <% } %>
+    </table>
+  </body>
+</html>
